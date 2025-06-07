@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background-color: #007bff;
+    padding: 20px;
+    color: white;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-content h1 {
+    margin: 0;
+}
+.logout-button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    width: 200px;
+    background-color: #007bff;
+    padding: 20px;
+    color: white;
+    flex-shrink: 0;
+    overflow-y: auto;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: #0056b3;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.sidebar ul li a:hover {
+    background-color: #004085;
+}
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+.admin-section {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease;
+}
+.book-buttons {
+    margin-bottom: 20px;
+}
+.book-buttons button {
+    margin-right: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.book-buttons button:hover {
+    background-color: #004085;
+}
+.book-form {
+    display: none;
+    margin-bottom: 20px;
+    padding: 10 px 20px;
+}
+h2 {
+    margin-bottom: 20px;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+form button:hover {
+    background-color: #004085;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 500px;
+}
+table th, table td {   
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    text-align: left;
+}
+table th {
+    background-color: lavender;
+}
+table img {
+    width: 50px;
+    height: 50px;
+}
+button.go-back {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+button.go-back:hover {
+    background-color: #c12e2a;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.but {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.book-view {
+    display: flex;
+    flex-wrap: wrap; 
+    row-gap: 5rem;
+    column-gap: 1.5rem;
+    text-align: center;
+}
+.viewbks_container {   
+    margin-bottom: 1rem; 
+    width: 200px;
+    padding: 1.2rem 1.4rem;
+    border: black;
+    font-size: 1rem;
+    color: black;
+    background-color: lavender;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  .viewbks_container .bimage {
+    height: 150px;
+    width: 100px;
+    display: block; 
+    margin: 0 auto; 
+    margin-bottom: 1rem;
+  }
+  .viewbks_container .title,
+   .viewbks_container .code, 
+ .viewbks_container .price {
+    margin-bottom: 1rem; 
+  }
+  .viewbks_container .qty {
+    margin-bottom: 1rem;
+  }
+  .view-users-form{
+    padding: 20px;
+  }
